@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 75px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5733 !important;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff5733 !important;
+}
+
+/* About Section */
+#about-section {
+    background-image: url('https://st4.depositphotos.com/11169808/22933/i/450/depositphotos_229330324-stock-photo-tasty-pepperoni-pizza-cooking-ingredients.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+}
+
+#about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#about-section .container {
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff5733;
+    z-index: 3;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1rem;
+    z-index: 3;
+}
+
+.btn-outline-light {
+    border: 2px solid #ff5733;
+    background: transparent;
+    color: #ff5733;
+    padding: 0.7rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    z-index: inherit;
+}
+
+.btn-outline-light:hover {
+    background-color: #ff5733;
+    color: #ffffff;
+}
+
+/* Menu Section */
+#menu {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card .btn-primary {
+    background-color: #ff5733;
+    border-color: #ff5733;
+    font-size: 1rem;
+}
+
+.card .btn-primary:hover {
+    background-color: #e04e2d;
+}
+
+/* Order Section */
+#order {
+    background-color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#order h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 1rem;
+}
+
+#order .btn-primary {
+    background-color: #ff5733;
+    border-color: #ff5733;
+    font-size: 1.2rem;
+    padding: 0.7rem 2rem;
+}
+
+#order .btn-primary:hover {
+    background-color: #e04e2d;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #555;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form .form-control {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+form .btn-danger {
+    background-color: #ff5733;
+    border-color: #ff5733;
+}
+
+form .btn-danger:hover {
+    background-color: #e04e2d;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #e04e2d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+        color: #000;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    #about-section {
+        height: 50vh;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.2rem;
+    }
+
+    #menu h2 {
+        font-size: 2rem;
+    }
+
+    #order h2 {
+        font-size: 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+}
