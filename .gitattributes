@@ -1,0 +1,4 @@
+# Force GitHub Linguist to detect these file types
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.js linguist-detectable=true
